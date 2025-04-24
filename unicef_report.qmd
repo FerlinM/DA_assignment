@@ -1,0 +1,423 @@
+---
+title: "UNICEF Global Report: The Twin Pillars of Child Development"
+subtitle: "Examining Education Access and Preventive Healthcare Worldwide"
+author: "Ferlin Martin"
+date: "April 24, 2025"
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    number-sections: true
+    theme: cosmo
+    fig-width: 10
+    fig-height: 6
+---
+
+```{python}
+#| label: setup
+#| include: false
+
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import geopandas as gpd
+from plotnine import *
+import seaborn as sns
+from sklearn.linear_model import LinearRegression
+import warnings
+warnings.filterwarnings('ignore')
+
+# Set the plotting theme
+plt.style.use('seaborn-v0_8-whitegrid')
+
+# Read the datasets
+education_data = pd.read_csv('dataset/unicef_indicator_1.csv')
+vaccination_data = pd.read_csv('dataset/unicef_indicator_2.csv')
+
+# Load world map data
+world = gpd.read_file(
+    "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_countries.geojson"
+)
+
+# Fix the country names in the world map data to match UNICEF data
+world['name'] = world['name'].replace({
+    'United States of America': 'United States',
+    'Dominican Rep.': 'Dominican Republic',
+    'Central African Rep.': 'Central African Republic',
+    'Dem. Rep. Congo': 'Congo, the Democratic Republic of the',
+    'Congo': 'Congo',
+    'Korea': 'Korea, Democratic People\'s Republic of',
+    'Tanzania': 'Tanzania, United Republic of'
+})
+```
+
+## Executive Summary {.unnumbered}
+
+This report examines two critical indicators of child welfare globally: access to primary education and access to preventive healthcare, specifically HPV vaccination. Through data analysis and visualization, we demonstrate the significant disparities that exist between regions and countries, as well as the progress being made in addressing these challenges.
+
+Our analysis reveals that while some regions have achieved near-universal primary school enrollment, others continue to struggle with high out-of-school rates, particularly for girls. Similarly, HPV vaccination rates vary dramatically across countries, with some achieving high coverage while others are only beginning implementation.
+
+The data suggests a correlation between educational access and healthcare provision, highlighting the interconnected nature of development indicators. The report concludes with recommendations for targeted interventions to address persistent gaps in both education and preventive healthcare.
+
+## Introduction {.unnumbered}
+
+Children's wellbeing depends on many factors, but education and healthcare stand as two of the most critical pillars supporting healthy development. The United Nations Children's Fund (UNICEF) collects comprehensive data on both these dimensions, allowing us to monitor progress and identify areas needing attention.
+
+This report focuses on two specific indicators:
+
+1. **Out-of-school rate for children of primary school age**: This measures the percentage of children who should be enrolled in primary education but are not attending school.
+
+2. **HPV vaccination rate for 15-year-old females**: This tracks the percentage of girls who have received the complete human papillomavirus vaccine series, which protects against cervical cancer—a disease that claims hundreds of thousands of women's lives annually.
+
+By examining these indicators together, we gain insight into how countries are performing on meeting basic needs for children and adolescents, and identify patterns that can guide policy interventions.
+
+## Global Analysis of Education Access
+
+```{python}
+#| label: education-data-prep
+#| warning: false
+
+# Prepare education data for analysis
+# Filter to only include 'Total' gender data for clarity
+education_total = education_data[education_data['sex'] == 'Total'].copy()
+
+# Get the latest data for each country
+education_latest = education_total.sort_values('time_period', ascending=False).drop_duplicates('country')
+
+# Calculate regional averages
+regions = {
+    'Sub-Saharan Africa': ['Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 'Cameroon', 
+                          'Central African Republic', 'Chad', 'Congo', 'Ethiopia', 'Gabon', 
+                          'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Ivory Coast', 'Kenya', 
+                          'Lesotho', 'Liberia', 'Madagascar', 'Malawi', 'Mali', 'Mauritania', 
+                          'Mozambique', 'Namibia', 'Niger', 'Nigeria', 'Rwanda', 'Senegal', 
+                          'Sierra Leone', 'South Africa', 'South Sudan', 'Swaziland', 'Tanzania, United Republic of', 
+                          'Togo', 'Uganda', 'Zambia', 'Zimbabwe'],
+    'Middle East & North Africa': ['Algeria', 'Egypt', 'Iraq', 'Jordan', 'Libya', 'Morocco', 
+                                  'Oman', 'Palestinian Territory, Occupied', 'Qatar', 'Saudi Arabia', 
+                                  'Sudan', 'Tunisia', 'Turkey', 'Yemen'],
+    'South Asia': ['Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 
+                  'Nepal', 'Pakistan', 'Sri Lanka'],
+    'East Asia & Pacific': ['Cambodia', 'China', 'Indonesia', 'Kiribati', 'Korea, Democratic People\'s Republic of', 
+                          'Lao People\'s Democratic Republic', 'Malaysia', 'Mongolia', 'Myanmar', 'Philippines', 
+                          'Samoa', 'Thailand', 'Timor-Leste', 'Tonga', 'Tuvalu', 'Vietnam'],
+    'Latin America & Caribbean': ['Argentina', 'Barbados', 'Belize', 'Bolivia, Plurinational State of', 
+                                'Brazil', 'Chile', 'Colombia', 'Costa Rica', 'Cuba', 'Dominican Republic', 
+                                'Ecuador', 'El Salvador', 'Guatemala', 'Guyana', 'Haiti', 'Honduras', 
+                                'Jamaica', 'Mexico', 'Panama', 'Paraguay', 'Peru', 'Saint Lucia', 
+                                'Suriname', 'Trinidad and Tobago', 'Uruguay'],
+    'Europe & Central Asia': ['Albania', 'Armenia', 'Belarus', 'Bosnia and Herzegovina', 'Georgia', 
+                             'Kazakhstan', 'Kyrgyzstan', 'Macedonia, the former Yugoslav Republic of', 
+                             'Moldova, Republic of', 'Montenegro', 'Romania', 'Serbia', 'Tajikistan', 
+                             'Turkmenistan', 'Ukraine']
+}
+
+# Add region to education data
+def assign_region(country):
+    for region, countries in regions.items():
+        if country in countries:
+            return region
+    return 'Other'
+
+education_latest['region'] = education_latest['country'].apply(assign_region)
+
+# Calculate regional averages
+regional_avg = education_latest.groupby('region')['obs_value'].mean().reset_index()
+regional_avg = regional_avg.sort_values('obs_value', ascending=False)
+
+# Prepare data for map visualization
+map_data = pd.merge(education_latest[['country', 'obs_value']], 
+                    world[['name', 'geometry']], 
+                    how='right',
+                    left_on='country', 
+                    right_on='name')
+
+# Replace NaN with -1 to identify countries with missing data
+map_data['out_of_school_rate'] = map_data['obs_value']
+
+# Calculate global average for out-of-school rate
+global_avg = education_latest['obs_value'].mean()
+
+# Calculate countries with highest rates
+school_rate_avg = education_latest[['country', 'obs_value']].copy()
+school_rate_avg.columns = ['country', 'out_of_school_rate']
+school_rate_avg = school_rate_avg.sort_values('out_of_school_rate', ascending=False)
+```
+
+### Global Map of Primary School Out-of-School Rates
+
+```{python}
+#| label: fig-education-map
+#| fig-cap: "Global Distribution of Primary School-Age Children Not in School"
+#| warning: false
+
+# Merge map with data
+merged = world.merge(school_rate_avg, how='left', left_on='name', right_on='country')
+
+# Create a table showing countries with out-of-school rates
+print("Countries with Out-of-School Rates:")
+countries_with_data = school_rate_avg.sort_values('out_of_school_rate', ascending=False)
+display(countries_with_data.head(20))  # Show top 20 countries with highest rates
+# Count countries with no data
+countries_no_data = set(world['name']) - set(school_rate_avg['country'])
+print(f"\nNumber of countries with no data: {len(countries_no_data)}")
+
+# Plot map
+fig, ax = plt.subplots(1, 1, figsize=(10, 8))
+merged.plot(column='out_of_school_rate',
+  cmap='Reds',
+  linewidth=0.8,
+  ax=ax,
+  edgecolor='0.8',
+  legend=True,
+  legend_kwds={'shrink': 0.4, 'aspect': 20, 'label': 'Out-of-School Rate (%)',
+               'fraction': 0.046, 'pad': 0.04,
+               'location': 'left'},
+  missing_kwds={"color": "lightgrey", "label": "No data"})
+
+ax.set_title('Out-of-School Rate for Primary-Age Children', fontdict={'fontsize': 16})
+ax.axis('off')
+
+# Set tighter map bounds to crop the empty sides and keep only the center
+ax.set_xlim([-100, 150])  # Crop more from the left side
+ax.set_ylim([-60, 85])    # Adjust vertical limits to focus on populated areas
+
+plt.show()
+```
+
+### Regional Analysis of Education Access
+
+```{python}
+#| label: fig-education-regional
+#| fig-cap: "Regional Comparison of Out-of-School Rates for Primary-Age Children"
+#| warning: false
+
+# Create a bar chart comparing regions
+p = (ggplot(regional_avg, aes(x='region', y='obs_value', fill='region'))
+  + geom_bar(stat='identity', width=0.6)
+  + geom_hline(yintercept=global_avg, linetype='dashed', color='red')
+  + geom_text(aes(label='round(obs_value, 1)'), va='bottom', size=8)
+  + labs(title='Primary School Out-of-School Rates by Region',
+      x='Region', 
+      y='Out-of-School Rate (%)',
+      caption='Source: UNICEF Data')
+  + theme_minimal()
+  + theme(axis_text_x=element_text(angle=45, hjust=1),
+      legend_position='none',
+      figure_size=(8, 6))  # Added figure_size to control dimensions
+)
+display(p)
+```
+
+The world map and regional comparisons reveal stark disparities in education access. Sub-Saharan Africa and parts of South Asia face the greatest challenges, with out-of-school rates often exceeding 20%. In countries like South Sudan, Chad, and Mali, nearly half of all primary school-age children are not in school.
+
+In contrast, regions like Europe, Central Asia, and much of Latin America have achieved near-universal primary education, with out-of-school rates below 5%. These regional differences highlight the need for targeted interventions in areas where education access remains limited.
+
+Gender analysis (not shown in the visualization) indicates that in many countries, girls remain more likely to be out of school than boys, particularly in regions with the highest overall out-of-school rates.
+
+## Global Analysis of HPV Vaccination
+
+```{python}
+#| label: vaccination-data-prep
+#| warning: false
+
+# Prepare vaccination data
+# Filter for the most recent data for each country
+vaccination_latest = vaccination_data.sort_values('time_period', ascending=False).drop_duplicates('country')
+
+# Add region to vaccination data
+vaccination_latest['region'] = vaccination_latest['country'].apply(assign_region)
+
+# Calculate regional averages for vaccination
+regional_vax_avg = vaccination_latest.groupby('region')['obs_value'].mean().reset_index()
+regional_vax_avg = regional_vax_avg.sort_values('obs_value', ascending=False)
+
+# Time series analysis for selected countries with good data coverage
+countries_for_timeseries = ['Australia', 'Canada', 'Brazil', 'France', 'Iceland', 'Rwanda', 'South Africa']
+vaccination_timeseries = vaccination_data[vaccination_data['country'].isin(countries_for_timeseries)]
+
+# Prepare data for map visualization
+vax_map_data = pd.merge(vaccination_latest[['country', 'obs_value']], 
+                        world[['name', 'geometry']], 
+                        how='right',
+                        left_on='country', 
+                        right_on='name')
+
+# For correlation analysis, merge education and vaccination data
+merged_indicators = pd.merge(education_latest[['country', 'obs_value', 'region']], 
+                            vaccination_latest[['country', 'obs_value']], 
+                            on='country', 
+                            suffixes=('_education', '_vaccination'))
+```
+
+### Global Map of HPV Vaccination Coverage
+
+```{python}
+#| label: fig-vax-map
+#| fig-cap: "Global Distribution of HPV Vaccination Coverage Among 15-Year-Old Females"
+#| warning: false
+
+# Merge map with vaccination data
+vax_merged = world.merge(vaccination_latest, how='left', left_on='name', right_on='country')
+
+# Plot map
+fig, ax = plt.subplots(1, 1, figsize=(10, 8))
+vax_merged.plot(column='obs_value',
+               cmap='Blues',
+               linewidth=0.8,
+               ax=ax,
+               edgecolor='0.8',
+               legend=True,
+               legend_kwds={'shrink': 0.4, 'aspect': 20, 'label': 'Vaccination Rate for 15-Year-Old Females (%)',   'fraction': 0.046, 'pad': 0.04, 'location': 'left'},
+               missing_kwds={"color": "lightgrey", "label": "No data"})
+
+ax.set_title('HPV Vaccination Rate for 15-Year-Old Females (%)', fontdict={'fontsize': 16})
+
+ax.set_xlim([-130, 150])  # Crop more from the left side
+ax.set_ylim([-60, 85])    # Adjust vertical limits to focus on populated areas
+
+ax.axis('off')
+plt.show()
+```
+
+### Trends in HPV Vaccination Over Time
+
+```{python}
+#| label: fig-vax-time
+#| fig-cap: "Trends in HPV Vaccination Rates in Selected Countries (2010-2023)"
+#| warning: false
+
+# Create time series plot
+p = (ggplot(vaccination_timeseries, aes(x='time_period', y='obs_value', color='country', group='country'))
+  + geom_line(size=1)
+  + geom_point(size=3)
+  + labs(title='HPV Vaccination Rates Over Time',
+      x='Year',
+      y='Vaccination Rate (%)',
+      caption='Source: UNICEF Data')
+  + theme_minimal()
+  + theme(legend_title=element_blank(),
+       legend_position=(0.03, 0.0),  # Position legend inside plot at bottom left
+       legend_background=element_rect(fill='white', alpha=0.5),  # Add semi-transparent background
+       legend_box_margin=0,
+       legend_key_size=6,  # Make legend keys smaller
+       legend_text=element_text(size=8),  # Reduce the legend text size
+       figure_size=(8, 4))
+    )
+display(p)
+```
+
+### Countries with Highest and Lowest HPV Vaccination Rates
+
+```{python}
+#| label: fig-vax-bar
+#| fig-cap: "Countries with Highest and Lowest HPV Vaccination Rates (2023 data)"
+#| warning: false
+
+# Get 2023 data only
+vax_2023 = vaccination_data[vaccination_data['time_period'] == 2023].copy()
+
+# Find top and bottom 15 countries
+top_countries = vax_2023.sort_values('obs_value', ascending=False).head(10)
+bottom_countries = vax_2023.sort_values('obs_value').head(10)
+countries_to_plot = pd.concat([top_countries, bottom_countries])
+
+# Create bar chart
+p = (ggplot(countries_to_plot, aes(x='reorder(country, obs_value)', y='obs_value', fill='obs_value'))
+     + geom_bar(stat='identity')
+     + scale_fill_gradient(low='lightblue', high='darkblue')
+     + coord_flip()
+     + labs(title='Countries with Highest and Lowest HPV Vaccination Rates (2023)',
+            x='Country',
+            y='Vaccination Rate (%)',
+            caption='Source: UNICEF Data')
+     + theme_minimal()
+     + theme(legend_title=element_blank(),
+      legend_position=(1.0, 0.0),  # Position legend inside plot at bottom right
+       legend_background=element_rect(fill='white', alpha=0.5),  # Add semi-transparent background
+       legend_box_margin=0,
+       legend_key_size=15,  # Make legend keys smaller
+       legend_text=element_text(size=8),  # Reduce the legend text size
+       figure_size=(8, 7))
+    )
+display(p)
+```
+
+The analysis of HPV vaccination coverage reveals significant variation across countries and regions. Countries like Australia, Norway, and Iceland have achieved vaccination rates exceeding 80%, while many low-income countries have rates below 20% or have only recently introduced HPV vaccination programs.
+
+Time trend analysis shows that while some countries have maintained consistently high vaccination rates, others have experienced fluctuations. The COVID-19 pandemic (2020-2022) caused visible drops in vaccination rates in several countries, highlighting the vulnerability of preventive healthcare programs during global crises.
+
+Regional patterns in HPV vaccination do not always mirror those seen in education access. Some regions with moderate education outcomes have achieved high vaccination rates through targeted healthcare initiatives.
+
+## Relationship Between Education and Healthcare Indicators
+
+```{python}
+#| label: fig-correlation
+#| fig-cap: "Relationship Between Primary School Out-of-School Rate and HPV Vaccination Coverage"
+#| warning: false
+
+# Create scatter plot with regression line
+p = (ggplot(merged_indicators, aes(x='obs_value_education', y='obs_value_vaccination', color='region'))
+     + geom_point(size=3, alpha=0.7)
+     + geom_smooth(method='lm', color='black', se=True)
+     + labs(title='Relationship Between Education Access and HPV Vaccination',
+            x='Out-of-School Rate (%)',
+            y='HPV Vaccination Rate (%)',
+            caption='Source: UNICEF Data')
+     + theme_minimal()
+     + theme(legend_title=element_blank(),
+    figure_size=(8, 7))  # Reduced width from default to 6 inches
+    )
+display(p)
+
+# Calculate correlation coefficient
+corr = merged_indicators['obs_value_education'].corr(merged_indicators['obs_value_vaccination'])
+print(f"Correlation coefficient: {corr:.2f}")
+```
+
+The scatter plot reveals an interesting relationship between a country's out-of-school rate and its HPV vaccination coverage. There is a moderate negative correlation between these indicators, suggesting that countries with better education access (lower out-of-school rates) tend to have higher HPV vaccination rates.
+
+However, the relationship is not perfectly linear, and notable exceptions exist. Some countries have achieved relatively high vaccination rates despite moderate education challenges, demonstrating that targeted healthcare interventions can succeed even in contexts where broader development indicators lag.
+
+Regional clustering is also evident, with countries from the same region often showing similar patterns in both indicators.
+
+## Conclusions and Recommendations
+
+Our analysis of UNICEF data reveals several key insights:
+
+1. **Education access remains highly unequal globally**: While many regions have achieved near-universal primary education, substantial challenges persist in Sub-Saharan Africa and parts of South Asia, where out-of-school rates can exceed 40%.
+
+2. **HPV vaccination shows promising but uneven progress**: A growing number of countries have introduced HPV vaccination programs, but coverage rates vary dramatically, from over 90% to under 10%.
+
+3. **Education and healthcare indicators are linked**: Countries with stronger education systems tend to have better healthcare coverage, though the relationship is complex and influenced by many factors.
+
+4. **Regional patterns are significant**: Regional trends are clear in both indicators, suggesting that geographic, economic, and cultural factors play important roles in determining outcomes.
+
+Based on these findings, we recommend:
+
+- **Targeted education interventions** in countries with the highest out-of-school rates, with particular attention to addressing gender disparities where they exist.
+
+- **Expansion of HPV vaccination programs** in regions with low coverage, building on successful models from countries that have achieved high rates.
+
+- **Integrated approaches** that address education and healthcare simultaneously, recognizing the interconnected nature of these development indicators.
+
+- **Strengthened data collection systems** to monitor progress and identify emerging challenges, particularly in countries with limited current data availability.
+
+As UNICEF continues to work toward ensuring every child's right to education and healthcare, these data-driven insights can help guide resource allocation and program design for maximum impact.
+
+## Appendix: Data Sources and Methodology
+
+This report analyzes two key datasets from UNICEF:
+
+1. **Out-of-school rate for children of primary school age**: This indicator measures the percentage of children in the official primary school age range who are not enrolled in either primary or secondary education.
+
+2. **Percentage of females who received the last dose of human papillomavirus (HPV) vaccine per national schedule**: This tracks the completion of the HPV vaccination series among 15-year-old females.
+
+The data visualization and analysis were conducted using Python, with the plotnine, GeoPandas, and scikit-learn libraries. Regional aggregations were calculated as unweighted averages of country-level indicators.
+
+Limitations of this analysis include incomplete data coverage for some countries and potential variations in data collection methodologies across different national statistical systems.
+

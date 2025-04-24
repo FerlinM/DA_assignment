@@ -1,0 +1,352 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Afghanistan,AF,AFG,4,Out-of-school rate for children of primary school age,2015,47.099998,Female,,%,,,,Total
+Afghanistan,AF,AFG,4,Out-of-school rate for children of primary school age,2015,27.799999,Male,,%,,,,Total
+Afghanistan,AF,AFG,4,Out-of-school rate for children of primary school age,2015,37,Total,,%,,,,Total
+Albania,AL,ALB,8,Out-of-school rate for children of primary school age,2018,2.0999999,Female,,%,,,,Total
+Albania,AL,ALB,8,Out-of-school rate for children of primary school age,2018,2.5999999,Male,,%,,,,Total
+Albania,AL,ALB,8,Out-of-school rate for children of primary school age,2018,2.4000001,Total,,%,,,,Total
+Algeria,DZ,DZA,12,Out-of-school rate for children of primary school age,2020,1.75218,Female,,%,,,,Total
+Algeria,DZ,DZA,12,Out-of-school rate for children of primary school age,2020,1.866154,Male,,%,,,,Total
+Algeria,DZ,DZA,12,Out-of-school rate for children of primary school age,2020,1.810739,Total,,%,,,,Total
+Angola,AO,AGO,24,Out-of-school rate for children of primary school age,2016,22.132311,Female,,%,,,,Total
+Angola,AO,AGO,24,Out-of-school rate for children of primary school age,2016,21.26763,Male,,%,,,,Total
+Angola,AO,AGO,24,Out-of-school rate for children of primary school age,2016,21.69482,Total,,%,,,,Total
+Argentina,AR,ARG,32,Out-of-school rate for children of primary school age,2020,0.2271357,Female,,%,,,,Total
+Argentina,AR,ARG,32,Out-of-school rate for children of primary school age,2020,0.30022931,Male,,%,,,,Total
+Argentina,AR,ARG,32,Out-of-school rate for children of primary school age,2020,0.2647399,Total,,%,,,,Total
+Armenia,AM,ARM,51,Out-of-school rate for children of primary school age,2016,4.3000002,Female,,%,,,,Total
+Armenia,AM,ARM,51,Out-of-school rate for children of primary school age,2016,4.5999999,Male,,%,,,,Total
+Armenia,AM,ARM,51,Out-of-school rate for children of primary school age,2016,4.5,Total,,%,,,,Total
+Bangladesh,BD,BGD,50,Out-of-school rate for children of primary school age,2019,4.5,Female,,%,,,,Total
+Bangladesh,BD,BGD,50,Out-of-school rate for children of primary school age,2019,8.1000004,Male,,%,,,,Total
+Bangladesh,BD,BGD,50,Out-of-school rate for children of primary school age,2019,6.4000001,Total,,%,,,,Total
+Barbados,BB,BRB,52,Out-of-school rate for children of primary school age,2012,1.1,Female,,%,,,,Total
+Barbados,BB,BRB,52,Out-of-school rate for children of primary school age,2012,0,Male,,%,,,,Total
+Barbados,BB,BRB,52,Out-of-school rate for children of primary school age,2012,0.5,Total,,%,,,,Total
+Belarus,BY,BLR,112,Out-of-school rate for children of primary school age,2020,0.0241083,Female,,%,,,,Total
+Belarus,BY,BLR,112,Out-of-school rate for children of primary school age,2020,0.13570841,Male,,%,,,,Total
+Belarus,BY,BLR,112,Out-of-school rate for children of primary school age,2020,0.0836608,Total,,%,,,,Total
+Belize,BZ,BLZ,84,Out-of-school rate for children of primary school age,2016,2,Female,,%,,,,Total
+Belize,BZ,BLZ,84,Out-of-school rate for children of primary school age,2016,2.3,Male,,%,,,,Total
+Belize,BZ,BLZ,84,Out-of-school rate for children of primary school age,2016,2.2,Total,,%,,,,Total
+Benin,BJ,BEN,204,Out-of-school rate for children of primary school age,2018,34.700001,Female,,%,,,,Total
+Benin,BJ,BEN,204,Out-of-school rate for children of primary school age,2018,28.299999,Male,,%,,,,Total
+Benin,BJ,BEN,204,Out-of-school rate for children of primary school age,2018,31.5,Total,,%,,,,Total
+Bhutan,BT,BTN,64,Out-of-school rate for children of primary school age,2010,7.0999999,Female,,%,,,,Total
+Bhutan,BT,BTN,64,Out-of-school rate for children of primary school age,2010,8.6000004,Male,,%,,,,Total
+Bhutan,BT,BTN,64,Out-of-school rate for children of primary school age,2010,7.9000001,Total,,%,,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,Out-of-school rate for children of primary school age,2016,2.7986879,Female,,%,,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,Out-of-school rate for children of primary school age,2016,2.768374,Male,,%,,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,Out-of-school rate for children of primary school age,2016,2.78286,Total,,%,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,Out-of-school rate for children of primary school age,2012,3.9000001,Female,,%,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,Out-of-school rate for children of primary school age,2012,2.2,Male,,%,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,Out-of-school rate for children of primary school age,2012,2.9000001,Total,,%,,,,Total
+Botswana,BW,BWA,72,Out-of-school rate for children of primary school age,2017,1,Female,,%,,,,Total
+Botswana,BW,BWA,72,Out-of-school rate for children of primary school age,2017,1.3,Male,,%,,,,Total
+Botswana,BW,BWA,72,Out-of-school rate for children of primary school age,2017,1.2,Total,,%,,,,Total
+Brazil,BR,BRA,76,Out-of-school rate for children of primary school age,2019,0.37384519,Female,,%,,,,Total
+Brazil,BR,BRA,76,Out-of-school rate for children of primary school age,2019,0.60525417,Male,,%,,,,Total
+Brazil,BR,BRA,76,Out-of-school rate for children of primary school age,2019,0.4908559,Total,,%,,,,Total
+Burkina Faso,BF,BFA,854,Out-of-school rate for children of primary school age,2010,50,Female,,%,,,,Total
+Burkina Faso,BF,BFA,854,Out-of-school rate for children of primary school age,2010,46.299999,Male,,%,,,,Total
+Burkina Faso,BF,BFA,854,Out-of-school rate for children of primary school age,2010,48.099998,Total,,%,,,,Total
+Burundi,BI,BDI,108,Out-of-school rate for children of primary school age,2017,17.6,Female,,%,,,,Total
+Burundi,BI,BDI,108,Out-of-school rate for children of primary school age,2017,17.799999,Male,,%,,,,Total
+Burundi,BI,BDI,108,Out-of-school rate for children of primary school age,2017,17.700001,Total,,%,,,,Total
+Cambodia,KH,KHM,116,Out-of-school rate for children of primary school age,2014,5.3513079,Female,,%,,,,Total
+Cambodia,KH,KHM,116,Out-of-school rate for children of primary school age,2014,7.3545079,Male,,%,,,,Total
+Cambodia,KH,KHM,116,Out-of-school rate for children of primary school age,2014,6.355988,Total,,%,,,,Total
+Cameroon,CM,CMR,120,Out-of-school rate for children of primary school age,2018,17.12788,Female,,%,,,,Total
+Cameroon,CM,CMR,120,Out-of-school rate for children of primary school age,2018,13.56048,Male,,%,,,,Total
+Cameroon,CM,CMR,120,Out-of-school rate for children of primary school age,2018,15.33467,Total,,%,,,,Total
+Central African Republic,CF,CAF,140,Out-of-school rate for children of primary school age,2019,29.990959,Female,,%,,,,Total
+Central African Republic,CF,CAF,140,Out-of-school rate for children of primary school age,2019,23.18189,Male,,%,,,,Total
+Central African Republic,CF,CAF,140,Out-of-school rate for children of primary school age,2019,26.461349,Total,,%,,,,Total
+Chad,TD,TCD,148,Out-of-school rate for children of primary school age,2019,59.42585,Female,,%,,,,Total
+Chad,TD,TCD,148,Out-of-school rate for children of primary school age,2019,54.290581,Male,,%,,,,Total
+Chad,TD,TCD,148,Out-of-school rate for children of primary school age,2019,56.82465,Total,,%,,,,Total
+Chile,CL,CHL,152,Out-of-school rate for children of primary school age,2017,0.89999998,Female,,%,,,,Total
+Chile,CL,CHL,152,Out-of-school rate for children of primary school age,2017,1.7,Male,,%,,,,Total
+Chile,CL,CHL,152,Out-of-school rate for children of primary school age,2017,1.3,Total,,%,,,,Total
+China,CN,CHN,156,Out-of-school rate for children of primary school age,2015,5.1999998,Female,,%,,,,Total
+China,CN,CHN,156,Out-of-school rate for children of primary school age,2015,5.1999998,Male,,%,,,,Total
+China,CN,CHN,156,Out-of-school rate for children of primary school age,2015,5.1999998,Total,,%,,,,Total
+Colombia,CO,COL,170,Out-of-school rate for children of primary school age,2015,1.61092,Female,,%,,,,Total
+Colombia,CO,COL,170,Out-of-school rate for children of primary school age,2015,2.1986549,Male,,%,,,,Total
+Colombia,CO,COL,170,Out-of-school rate for children of primary school age,2015,1.9103529,Total,,%,,,,Total
+Comoros,KM,COM,174,Out-of-school rate for children of primary school age,2012,14.6,Female,,%,,,,Total
+Comoros,KM,COM,174,Out-of-school rate for children of primary school age,2012,14.1,Male,,%,,,,Total
+Comoros,KM,COM,174,Out-of-school rate for children of primary school age,2012,14.3,Total,,%,,,,Total
+Congo,CG,COG,178,Out-of-school rate for children of primary school age,2015,3,Female,,%,,,,Total
+Congo,CG,COG,178,Out-of-school rate for children of primary school age,2015,3.3,Male,,%,,,,Total
+Congo,CG,COG,178,Out-of-school rate for children of primary school age,2015,3.2,Total,,%,,,,Total
+Costa Rica,CR,CRI,188,Out-of-school rate for children of primary school age,2018,1.3398401,Female,,%,,,,Total
+Costa Rica,CR,CRI,188,Out-of-school rate for children of primary school age,2018,1.349028,Male,,%,,,,Total
+Costa Rica,CR,CRI,188,Out-of-school rate for children of primary school age,2018,1.3445441,Total,,%,,,,Total
+Cuba,CU,CUB,192,Out-of-school rate for children of primary school age,2019,1.049547,Female,,%,,,,Total
+Cuba,CU,CUB,192,Out-of-school rate for children of primary school age,2019,0.90610951,Male,,%,,,,Total
+Cuba,CU,CUB,192,Out-of-school rate for children of primary school age,2019,0.97699523,Total,,%,,,,Total
+Ivory Coast,CI,CIV,384,Out-of-school rate for children of primary school age,2016,25.700001,Female,,%,,,,Total
+Ivory Coast,CI,CIV,384,Out-of-school rate for children of primary school age,2016,20.5,Male,,%,,,,Total
+Ivory Coast,CI,CIV,384,Out-of-school rate for children of primary school age,2016,23,Total,,%,,,,Total
+"Korea, Democratic People's Republic of",KP,PRK,408,Out-of-school rate for children of primary school age,2017,3.4000001,Female,,%,,,,Total
+"Korea, Democratic People's Republic of",KP,PRK,408,Out-of-school rate for children of primary school age,2017,3.3,Male,,%,,,,Total
+"Korea, Democratic People's Republic of",KP,PRK,408,Out-of-school rate for children of primary school age,2017,3.3,Total,,%,,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,Out-of-school rate for children of primary school age,2018,22.34152,Female,,%,,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,Out-of-school rate for children of primary school age,2018,20.93211,Male,,%,,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,Out-of-school rate for children of primary school age,2018,21.61414,Total,,%,,,,Total
+Dominican Republic,DO,DOM,214,Out-of-school rate for children of primary school age,2019,2.935652,Female,,%,,,,Total
+Dominican Republic,DO,DOM,214,Out-of-school rate for children of primary school age,2019,3.0411761,Male,,%,,,,Total
+Dominican Republic,DO,DOM,214,Out-of-school rate for children of primary school age,2019,2.9887929,Total,,%,,,,Total
+Ecuador,EC,ECU,218,Out-of-school rate for children of primary school age,2019,1.5,Female,,%,,,,Total
+Ecuador,EC,ECU,218,Out-of-school rate for children of primary school age,2019,1,Male,,%,,,,Total
+Ecuador,EC,ECU,218,Out-of-school rate for children of primary school age,2019,1.3,Total,,%,,,,Total
+Egypt,EG,EGY,818,Out-of-school rate for children of primary school age,2014,3.3,Female,,%,,,,Total
+Egypt,EG,EGY,818,Out-of-school rate for children of primary school age,2014,2.9000001,Male,,%,,,,Total
+Egypt,EG,EGY,818,Out-of-school rate for children of primary school age,2014,3.0999999,Total,,%,,,,Total
+El Salvador,SV,SLV,222,Out-of-school rate for children of primary school age,2014,3.2,Female,,%,,,,Total
+El Salvador,SV,SLV,222,Out-of-school rate for children of primary school age,2014,3.8,Male,,%,,,,Total
+El Salvador,SV,SLV,222,Out-of-school rate for children of primary school age,2014,3.5,Total,,%,,,,Total
+Swaziland,SZ,SWZ,748,Out-of-school rate for children of primary school age,2014,1.2,Female,,%,,,,Total
+Swaziland,SZ,SWZ,748,Out-of-school rate for children of primary school age,2014,1.6,Male,,%,,,,Total
+Swaziland,SZ,SWZ,748,Out-of-school rate for children of primary school age,2014,1.4,Total,,%,,,,Total
+Ethiopia,ET,ETH,231,Out-of-school rate for children of primary school age,2016,24.5,Female,,%,,,,Total
+Ethiopia,ET,ETH,231,Out-of-school rate for children of primary school age,2016,25.799999,Male,,%,,,,Total
+Ethiopia,ET,ETH,231,Out-of-school rate for children of primary school age,2016,25.200001,Total,,%,,,,Total
+Gabon,GA,GAB,266,Out-of-school rate for children of primary school age,2012,3.0999999,Female,,%,,,,Total
+Gabon,GA,GAB,266,Out-of-school rate for children of primary school age,2012,4.4000001,Male,,%,,,,Total
+Gabon,GA,GAB,266,Out-of-school rate for children of primary school age,2012,3.7,Total,,%,,,,Total
+Gambia,GM,GMB,270,Out-of-school rate for children of primary school age,2013,26.6,Female,,%,,,,Total
+Gambia,GM,GMB,270,Out-of-school rate for children of primary school age,2013,27.700001,Male,,%,,,,Total
+Gambia,GM,GMB,270,Out-of-school rate for children of primary school age,2013,27.1,Total,,%,,,,Total
+Georgia,GE,GEO,268,Out-of-school rate for children of primary school age,2018,0.88570619,Female,,%,,,,Total
+Georgia,GE,GEO,268,Out-of-school rate for children of primary school age,2018,1.467274,Male,,%,,,,Total
+Georgia,GE,GEO,268,Out-of-school rate for children of primary school age,2018,1.2,Total,,%,,,,Total
+Ghana,GH,GHA,288,Out-of-school rate for children of primary school age,2018,5.9853601,Female,,%,,,,Total
+Ghana,GH,GHA,288,Out-of-school rate for children of primary school age,2018,7.0418291,Male,,%,,,,Total
+Ghana,GH,GHA,288,Out-of-school rate for children of primary school age,2018,6.527452,Total,,%,,,,Total
+Guatemala,GT,GTM,320,Out-of-school rate for children of primary school age,2015,5.8000002,Female,,%,,,,Total
+Guatemala,GT,GTM,320,Out-of-school rate for children of primary school age,2015,5.0999999,Male,,%,,,,Total
+Guatemala,GT,GTM,320,Out-of-school rate for children of primary school age,2015,5.5,Total,,%,,,,Total
+Guinea,GN,GIN,324,Out-of-school rate for children of primary school age,2018,36.721821,Female,,%,,,,Total
+Guinea,GN,GIN,324,Out-of-school rate for children of primary school age,2018,31.45516,Male,,%,,,,Total
+Guinea,GN,GIN,324,Out-of-school rate for children of primary school age,2018,34.0812,Total,,%,,,,Total
+Guinea-Bissau,GW,GNB,624,Out-of-school rate for children of primary school age,2019,26.44644,Female,,%,,,,Total
+Guinea-Bissau,GW,GNB,624,Out-of-school rate for children of primary school age,2019,28.91671,Male,,%,,,,Total
+Guinea-Bissau,GW,GNB,624,Out-of-school rate for children of primary school age,2019,27.69451,Total,,%,,,,Total
+Guyana,GY,GUY,328,Out-of-school rate for children of primary school age,2020,2.4953871,Female,,%,,,,Total
+Guyana,GY,GUY,328,Out-of-school rate for children of primary school age,2020,2.350554,Male,,%,,,,Total
+Guyana,GY,GUY,328,Out-of-school rate for children of primary school age,2020,2.4254119,Total,,%,,,,Total
+Haiti,HT,HTI,332,Out-of-school rate for children of primary school age,2017,7.5,Female,,%,,,,Total
+Haiti,HT,HTI,332,Out-of-school rate for children of primary school age,2017,8.8999996,Male,,%,,,,Total
+Haiti,HT,HTI,332,Out-of-school rate for children of primary school age,2017,8.1999998,Total,,%,,,,Total
+Honduras,HN,HND,340,Out-of-school rate for children of primary school age,2019,3.9058881,Female,,%,,,,Total
+Honduras,HN,HND,340,Out-of-school rate for children of primary school age,2019,5.010057,Male,,%,,,,Total
+Honduras,HN,HND,340,Out-of-school rate for children of primary school age,2019,4.4691091,Total,,%,,,,Total
+India,IN,IND,356,Out-of-school rate for children of primary school age,2016,6.0999999,Female,,%,,,,Total
+India,IN,IND,356,Out-of-school rate for children of primary school age,2016,5.8000002,Male,,%,,,,Total
+India,IN,IND,356,Out-of-school rate for children of primary school age,2016,5.9000001,Total,,%,,,,Total
+Indonesia,ID,IDN,360,Out-of-school rate for children of primary school age,2017,1.233953,Female,,%,,,,Total
+Indonesia,ID,IDN,360,Out-of-school rate for children of primary school age,2017,1.708545,Male,,%,,,,Total
+Indonesia,ID,IDN,360,Out-of-school rate for children of primary school age,2017,1.477518,Total,,%,,,,Total
+Iraq,IQ,IRQ,368,Out-of-school rate for children of primary school age,2018,9.5,Female,,%,,,,Total
+Iraq,IQ,IRQ,368,Out-of-school rate for children of primary school age,2018,7.0999999,Male,,%,,,,Total
+Iraq,IQ,IRQ,368,Out-of-school rate for children of primary school age,2018,8.1999998,Total,,%,,,,Total
+Jamaica,JM,JAM,388,Out-of-school rate for children of primary school age,2011,0.30000001,Female,,%,,,,Total
+Jamaica,JM,JAM,388,Out-of-school rate for children of primary school age,2011,0.5,Male,,%,,,,Total
+Jamaica,JM,JAM,388,Out-of-school rate for children of primary school age,2011,0.40000001,Total,,%,,,,Total
+Jordan,JO,JOR,400,Out-of-school rate for children of primary school age,2018,2.0999999,Female,,%,,,,Total
+Jordan,JO,JOR,400,Out-of-school rate for children of primary school age,2018,3.0999999,Male,,%,,,,Total
+Jordan,JO,JOR,400,Out-of-school rate for children of primary school age,2018,2.5999999,Total,,%,,,,Total
+Kazakhstan,KZ,KAZ,398,Out-of-school rate for children of primary school age,2015,0.40000001,Female,,%,,,,Total
+Kazakhstan,KZ,KAZ,398,Out-of-school rate for children of primary school age,2015,0.40000001,Male,,%,,,,Total
+Kazakhstan,KZ,KAZ,398,Out-of-school rate for children of primary school age,2015,0.40000001,Total,,%,,,,Total
+Kenya,KE,KEN,404,Out-of-school rate for children of primary school age,2014,4.6999998,Female,,%,,,,Total
+Kenya,KE,KEN,404,Out-of-school rate for children of primary school age,2014,4.5999999,Male,,%,,,,Total
+Kenya,KE,KEN,404,Out-of-school rate for children of primary school age,2014,4.5999999,Total,,%,,,,Total
+Kiribati,KI,KIR,296,Out-of-school rate for children of primary school age,2019,2.409019,Female,,%,,,,Total
+Kiribati,KI,KIR,296,Out-of-school rate for children of primary school age,2019,3.9378741,Male,,%,,,,Total
+Kiribati,KI,KIR,296,Out-of-school rate for children of primary school age,2019,3.1963921,Total,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Out-of-school rate for children of primary school age,2018,0.89999998,Female,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Out-of-school rate for children of primary school age,2018,1.1,Male,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Out-of-school rate for children of primary school age,2018,1,Total,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Out-of-school rate for children of primary school age,2017,8.3000002,Female,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Out-of-school rate for children of primary school age,2017,8,Male,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Out-of-school rate for children of primary school age,2017,8,Total,,%,,,,Total
+Lesotho,LS,LSO,426,Out-of-school rate for children of primary school age,2018,2,Female,,%,,,,Total
+Lesotho,LS,LSO,426,Out-of-school rate for children of primary school age,2018,3.5,Male,,%,,,,Total
+Lesotho,LS,LSO,426,Out-of-school rate for children of primary school age,2018,2.7,Total,,%,,,,Total
+Liberia,LR,LBR,430,Out-of-school rate for children of primary school age,2013,16.799999,Female,,%,,,,Total
+Liberia,LR,LBR,430,Out-of-school rate for children of primary school age,2013,18,Male,,%,,,,Total
+Liberia,LR,LBR,430,Out-of-school rate for children of primary school age,2013,17.4,Total,,%,,,,Total
+Madagascar,MG,MDG,450,Out-of-school rate for children of primary school age,2018,19.299999,Female,,%,,,,Total
+Madagascar,MG,MDG,450,Out-of-school rate for children of primary school age,2018,24.299999,Male,,%,,,,Total
+Madagascar,MG,MDG,450,Out-of-school rate for children of primary school age,2018,21.799999,Total,,%,,,,Total
+Malawi,MW,MWI,454,Out-of-school rate for children of primary school age,2016,4.8000002,Female,,%,,,,Total
+Malawi,MW,MWI,454,Out-of-school rate for children of primary school age,2016,6.1999998,Male,,%,,,,Total
+Malawi,MW,MWI,454,Out-of-school rate for children of primary school age,2016,5.5,Total,,%,,,,Total
+Maldives,MV,MDV,462,Out-of-school rate for children of primary school age,2017,0.89999998,Female,,%,,,,Total
+Maldives,MV,MDV,462,Out-of-school rate for children of primary school age,2017,1.2,Male,,%,,,,Total
+Maldives,MV,MDV,462,Out-of-school rate for children of primary school age,2017,1,Total,,%,,,,Total
+Mali,ML,MLI,466,Out-of-school rate for children of primary school age,2015,49.5,Female,,%,,,,Total
+Mali,ML,MLI,466,Out-of-school rate for children of primary school age,2015,44.900002,Male,,%,,,,Total
+Mali,ML,MLI,466,Out-of-school rate for children of primary school age,2015,47.200001,Total,,%,,,,Total
+Mauritania,MR,MRT,478,Out-of-school rate for children of primary school age,2015,40,Female,,%,,,,Total
+Mauritania,MR,MRT,478,Out-of-school rate for children of primary school age,2015,43.900002,Male,,%,,,,Total
+Mauritania,MR,MRT,478,Out-of-school rate for children of primary school age,2015,41.900002,Total,,%,,,,Total
+Mexico,MX,MEX,484,Out-of-school rate for children of primary school age,2018,1.1,Female,,%,,,,Total
+Mexico,MX,MEX,484,Out-of-school rate for children of primary school age,2018,1.2,Male,,%,,,,Total
+Mexico,MX,MEX,484,Out-of-school rate for children of primary school age,2018,1.2,Total,,%,,,,Total
+Mongolia,MN,MNG,496,Out-of-school rate for children of primary school age,2018,2.5999999,Female,,%,,,,Total
+Mongolia,MN,MNG,496,Out-of-school rate for children of primary school age,2018,4.6999998,Male,,%,,,,Total
+Mongolia,MN,MNG,496,Out-of-school rate for children of primary school age,2018,3.5999999,Total,,%,,,,Total
+Montenegro,ME,MNE,499,Out-of-school rate for children of primary school age,2018,3.1275539,Female,,%,,,,Total
+Montenegro,ME,MNE,499,Out-of-school rate for children of primary school age,2018,3.7332129,Male,,%,,,,Total
+Montenegro,ME,MNE,499,Out-of-school rate for children of primary school age,2018,3.4429419,Total,,%,,,,Total
+Mozambique,MZ,MOZ,508,Out-of-school rate for children of primary school age,2011,23,Female,,%,,,,Total
+Mozambique,MZ,MOZ,508,Out-of-school rate for children of primary school age,2011,22.9,Male,,%,,,,Total
+Mozambique,MZ,MOZ,508,Out-of-school rate for children of primary school age,2011,22.9,Total,,%,,,,Total
+Myanmar,MM,MMR,104,Out-of-school rate for children of primary school age,2016,6.9000001,Female,,%,,,,Total
+Myanmar,MM,MMR,104,Out-of-school rate for children of primary school age,2016,5.4000001,Male,,%,,,,Total
+Myanmar,MM,MMR,104,Out-of-school rate for children of primary school age,2016,6.1999998,Total,,%,,,,Total
+Namibia,,NAM,516,Out-of-school rate for children of primary school age,2013,3.8,Female,,%,,,,Total
+Namibia,,NAM,516,Out-of-school rate for children of primary school age,2013,5.0999999,Male,,%,,,,Total
+Namibia,,NAM,516,Out-of-school rate for children of primary school age,2013,4.4000001,Total,,%,,,,Total
+Nauru,NR,NRU,520,Out-of-school rate for children of primary school age,2011,2.3,Female,,%,,,,Total
+Nauru,NR,NRU,520,Out-of-school rate for children of primary school age,2011,3.0999999,Male,,%,,,,Total
+Nauru,NR,NRU,520,Out-of-school rate for children of primary school age,2011,2.7,Total,,%,,,,Total
+Nepal,NP,NPL,524,Out-of-school rate for children of primary school age,2019,6.5806398,Female,,%,,,,Total
+Nepal,NP,NPL,524,Out-of-school rate for children of primary school age,2019,4.616137,Male,,%,,,,Total
+Nepal,NP,NPL,524,Out-of-school rate for children of primary school age,2019,5.5592418,Total,,%,,,,Total
+Niger,NE,NER,562,Out-of-school rate for children of primary school age,2012,53.799999,Female,,%,,,,Total
+Niger,NE,NER,562,Out-of-school rate for children of primary school age,2012,44.700001,Male,,%,,,,Total
+Niger,NE,NER,562,Out-of-school rate for children of primary school age,2012,49.099998,Total,,%,,,,Total
+Nigeria,NG,NGA,566,Out-of-school rate for children of primary school age,2018,28.6,Female,,%,,,,Total
+Nigeria,NG,NGA,566,Out-of-school rate for children of primary school age,2018,26.6,Male,,%,,,,Total
+Nigeria,NG,NGA,566,Out-of-school rate for children of primary school age,2018,27.6,Total,,%,,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,Out-of-school rate for children of primary school age,2019,1.350669,Female,,%,,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,Out-of-school rate for children of primary school age,2019,1.941546,Male,,%,,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,Out-of-school rate for children of primary school age,2019,1.647368,Total,,%,,,,Total
+Oman,OM,OMN,512,Out-of-school rate for children of primary school age,2014,2,Female,,%,,,,Total
+Oman,OM,OMN,512,Out-of-school rate for children of primary school age,2014,2.9000001,Male,,%,,,,Total
+Oman,OM,OMN,512,Out-of-school rate for children of primary school age,2014,2.5,Total,,%,,,,Total
+Pakistan,PK,PAK,586,Out-of-school rate for children of primary school age,2018,26.700001,Female,,%,,,,Total
+Pakistan,PK,PAK,586,Out-of-school rate for children of primary school age,2018,19.4,Male,,%,,,,Total
+Pakistan,PK,PAK,586,Out-of-school rate for children of primary school age,2018,23,Total,,%,,,,Total
+Panama,PA,PAN,591,Out-of-school rate for children of primary school age,2013,0.80000001,Female,,%,,,,Total
+Panama,PA,PAN,591,Out-of-school rate for children of primary school age,2013,1,Male,,%,,,,Total
+Panama,PA,PAN,591,Out-of-school rate for children of primary school age,2013,0.89999998,Total,,%,,,,Total
+Paraguay,PY,PRY,600,Out-of-school rate for children of primary school age,2017,0.80000001,Female,,%,,,,Total
+Paraguay,PY,PRY,600,Out-of-school rate for children of primary school age,2017,0.5,Male,,%,,,,Total
+Paraguay,PY,PRY,600,Out-of-school rate for children of primary school age,2017,0.60000002,Total,,%,,,,Total
+Peru,PE,PER,604,Out-of-school rate for children of primary school age,2012,2.4000001,Female,,%,,,,Total
+Peru,PE,PER,604,Out-of-school rate for children of primary school age,2012,2.5,Male,,%,,,,Total
+Peru,PE,PER,604,Out-of-school rate for children of primary school age,2012,2.5,Total,,%,,,,Total
+Philippines,PH,PHL,608,Out-of-school rate for children of primary school age,2017,1.6,Female,,%,,,,Total
+Philippines,PH,PHL,608,Out-of-school rate for children of primary school age,2017,2.5999999,Male,,%,,,,Total
+Philippines,PH,PHL,608,Out-of-school rate for children of primary school age,2017,2.0999999,Total,,%,,,,Total
+Qatar,QA,QAT,634,Out-of-school rate for children of primary school age,2012,2.3,Female,,%,,,,Total
+Qatar,QA,QAT,634,Out-of-school rate for children of primary school age,2012,3,Male,,%,,,,Total
+Qatar,QA,QAT,634,Out-of-school rate for children of primary school age,2012,2.7,Total,,%,,,,Total
+"Moldova, Republic of",MD,MDA,498,Out-of-school rate for children of primary school age,2012,0.69999999,Female,,%,,,,Total
+"Moldova, Republic of",MD,MDA,498,Out-of-school rate for children of primary school age,2012,0.60000002,Male,,%,,,,Total
+"Moldova, Republic of",MD,MDA,498,Out-of-school rate for children of primary school age,2012,0.69999999,Total,,%,,,,Total
+Romania,RO,ROU,642,Out-of-school rate for children of primary school age,2016,8.6000004,Female,,%,,,,Total
+Romania,RO,ROU,642,Out-of-school rate for children of primary school age,2016,8.3000002,Male,,%,,,,Total
+Romania,RO,ROU,642,Out-of-school rate for children of primary school age,2016,8.3999996,Total,,%,,,,Total
+Rwanda,RW,RWA,646,Out-of-school rate for children of primary school age,2015,4.4000001,Female,,%,,,,Total
+Rwanda,RW,RWA,646,Out-of-school rate for children of primary school age,2015,6.5999999,Male,,%,,,,Total
+Rwanda,RW,RWA,646,Out-of-school rate for children of primary school age,2015,5.5,Total,,%,,,,Total
+Saint Lucia,LC,LCA,662,Out-of-school rate for children of primary school age,2012,0.60000002,Female,,%,,,,Total
+Saint Lucia,LC,LCA,662,Out-of-school rate for children of primary school age,2012,0,Male,,%,,,,Total
+Saint Lucia,LC,LCA,662,Out-of-school rate for children of primary school age,2012,0.30000001,Total,,%,,,,Total
+Samoa,WS,WSM,882,Out-of-school rate for children of primary school age,2020,6.7178702,Female,,%,,,,Total
+Samoa,WS,WSM,882,Out-of-school rate for children of primary school age,2020,7.1249981,Male,,%,,,,Total
+Samoa,WS,WSM,882,Out-of-school rate for children of primary school age,2020,6.9254608,Total,,%,,,,Total
+Sao Tome and Principe,ST,STP,678,Out-of-school rate for children of primary school age,2019,2.9713521,Female,,%,,,,Total
+Sao Tome and Principe,ST,STP,678,Out-of-school rate for children of primary school age,2019,3.7136731,Male,,%,,,,Total
+Sao Tome and Principe,ST,STP,678,Out-of-school rate for children of primary school age,2019,3.350034,Total,,%,,,,Total
+Senegal,SN,SEN,686,Out-of-school rate for children of primary school age,2019,37.66444,Female,,%,,,,Total
+Senegal,SN,SEN,686,Out-of-school rate for children of primary school age,2019,39.953812,Male,,%,,,,Total
+Senegal,SN,SEN,686,Out-of-school rate for children of primary school age,2019,38.758572,Total,,%,,,,Total
+Serbia,RS,SRB,688,Out-of-school rate for children of primary school age,2019,1.026168,Female,,%,,,,Total
+Serbia,RS,SRB,688,Out-of-school rate for children of primary school age,2019,0.15424161,Male,,%,,,,Total
+Serbia,RS,SRB,688,Out-of-school rate for children of primary school age,2019,0.57079983,Total,,%,,,,Total
+Sierra Leone,SL,SLE,694,Out-of-school rate for children of primary school age,2017,14.7,Female,,%,,,,Total
+Sierra Leone,SL,SLE,694,Out-of-school rate for children of primary school age,2017,19.799999,Male,,%,,,,Total
+Sierra Leone,SL,SLE,694,Out-of-school rate for children of primary school age,2017,17.299999,Total,,%,,,,Total
+South Africa,ZA,ZAF,710,Out-of-school rate for children of primary school age,2016,0.80000001,Female,,%,,,,Total
+South Africa,ZA,ZAF,710,Out-of-school rate for children of primary school age,2016,1.2,Male,,%,,,,Total
+South Africa,ZA,ZAF,710,Out-of-school rate for children of primary school age,2016,1,Total,,%,,,,Total
+South Sudan,SS,SSD,728,Out-of-school rate for children of primary school age,2010,75,Female,,%,,,,Total
+South Sudan,SS,SSD,728,Out-of-school rate for children of primary school age,2010,69.800003,Male,,%,,,,Total
+South Sudan,SS,SSD,728,Out-of-school rate for children of primary school age,2010,72.400002,Total,,%,,,,Total
+Sri Lanka,LK,LKA,144,Out-of-school rate for children of primary school age,2016,2.059948,Female,,%,,,,Total
+Sri Lanka,LK,LKA,144,Out-of-school rate for children of primary school age,2016,2.1611249,Male,,%,,,,Total
+Sri Lanka,LK,LKA,144,Out-of-school rate for children of primary school age,2016,2.1108899,Total,,%,,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,Out-of-school rate for children of primary school age,2020,0.90490478,Female,,%,,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,Out-of-school rate for children of primary school age,2020,1.880865,Male,,%,,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,Out-of-school rate for children of primary school age,2020,1.39231,Total,,%,,,,Total
+Sudan,SD,SDN,736,Out-of-school rate for children of primary school age,2014,21.413731,Female,,%,,,,Total
+Sudan,SD,SDN,736,Out-of-school rate for children of primary school age,2014,20.38257,Male,,%,,,,Total
+Sudan,SD,SDN,736,Out-of-school rate for children of primary school age,2014,20.89414,Total,,%,,,,Total
+Suriname,SR,SUR,740,Out-of-school rate for children of primary school age,2018,1.9,Female,,%,,,,Total
+Suriname,SR,SUR,740,Out-of-school rate for children of primary school age,2018,2.9000001,Male,,%,,,,Total
+Suriname,SR,SUR,740,Out-of-school rate for children of primary school age,2018,2.4000001,Total,,%,,,,Total
+Tajikistan,TJ,TJK,762,Out-of-school rate for children of primary school age,2017,2.2,Female,,%,,,,Total
+Tajikistan,TJ,TJK,762,Out-of-school rate for children of primary school age,2017,1.5,Male,,%,,,,Total
+Tajikistan,TJ,TJK,762,Out-of-school rate for children of primary school age,2017,1.9,Total,,%,,,,Total
+Thailand,TH,THA,764,Out-of-school rate for children of primary school age,2019,1.069176,Female,,%,,,,Total
+Thailand,TH,THA,764,Out-of-school rate for children of primary school age,2019,1.086133,Male,,%,,,,Total
+Thailand,TH,THA,764,Out-of-school rate for children of primary school age,2019,1.078105,Total,,%,,,,Total
+Timor-Leste,TL,TLS,626,Out-of-school rate for children of primary school age,2016,8.8999996,Female,,%,,,,Total
+Timor-Leste,TL,TLS,626,Out-of-school rate for children of primary school age,2016,10,Male,,%,,,,Total
+Timor-Leste,TL,TLS,626,Out-of-school rate for children of primary school age,2016,9.5,Total,,%,,,,Total
+Togo,TG,TGO,768,Out-of-school rate for children of primary school age,2017,8.7830706,Female,,%,,,,Total
+Togo,TG,TGO,768,Out-of-school rate for children of primary school age,2017,7.5986819,Male,,%,,,,Total
+Togo,TG,TGO,768,Out-of-school rate for children of primary school age,2017,8.1802692,Total,,%,,,,Total
+Tonga,TO,TON,776,Out-of-school rate for children of primary school age,2019,3.59021,Female,,%,,,,Total
+Tonga,TO,TON,776,Out-of-school rate for children of primary school age,2019,3.7091041,Male,,%,,,,Total
+Tonga,TO,TON,776,Out-of-school rate for children of primary school age,2019,3.653002,Total,,%,,,,Total
+Trinidad and Tobago,TT,TTO,780,Out-of-school rate for children of primary school age,2011,0.80000001,Female,,%,,,,Total
+Trinidad and Tobago,TT,TTO,780,Out-of-school rate for children of primary school age,2011,1.3,Male,,%,,,,Total
+Trinidad and Tobago,TT,TTO,780,Out-of-school rate for children of primary school age,2011,1.1,Total,,%,,,,Total
+Tunisia,TN,TUN,788,Out-of-school rate for children of primary school age,2018,2.7,Female,,%,,,,Total
+Tunisia,TN,TUN,788,Out-of-school rate for children of primary school age,2018,2.9000001,Male,,%,,,,Total
+Tunisia,TN,TUN,788,Out-of-school rate for children of primary school age,2018,2.8,Total,,%,,,,Total
+Turkmenistan,TM,TKM,795,Out-of-school rate for children of primary school age,2019,0.94718713,Female,,%,,,,Total
+Turkmenistan,TM,TKM,795,Out-of-school rate for children of primary school age,2019,1.624163,Male,,%,,,,Total
+Turkmenistan,TM,TKM,795,Out-of-school rate for children of primary school age,2019,1.3083791,Total,,%,,,,Total
+Turks and Caicos Islands,TC,TCA,796,Out-of-school rate for children of primary school age,2020,0.61130363,Female,,%,,,,Total
+Turks and Caicos Islands,TC,TCA,796,Out-of-school rate for children of primary school age,2020,3.6135709,Male,,%,,,,Total
+Turks and Caicos Islands,TC,TCA,796,Out-of-school rate for children of primary school age,2020,2.1416891,Total,,%,,,,Total
+Tuvalu,TV,TUV,798,Out-of-school rate for children of primary school age,2020,15.2574,Female,,%,,,,Total
+Tuvalu,TV,TUV,798,Out-of-school rate for children of primary school age,2020,16.32481,Male,,%,,,,Total
+Tuvalu,TV,TUV,798,Out-of-school rate for children of primary school age,2020,15.78498,Total,,%,,,,Total
+Turkey,TR,TUR,792,Out-of-school rate for children of primary school age,2013,2.5,Female,,%,,,,Total
+Turkey,TR,TUR,792,Out-of-school rate for children of primary school age,2013,5.0999999,Male,,%,,,,Total
+Turkey,TR,TUR,792,Out-of-school rate for children of primary school age,2013,3.8,Total,,%,,,,Total
+Uganda,UG,UGA,800,Out-of-school rate for children of primary school age,2016,8.1000004,Female,,%,,,,Total
+Uganda,UG,UGA,800,Out-of-school rate for children of primary school age,2016,8.6000004,Male,,%,,,,Total
+Uganda,UG,UGA,800,Out-of-school rate for children of primary school age,2016,8,Total,,%,,,,Total
+Ukraine,UA,UKR,804,Out-of-school rate for children of primary school age,2012,1.5,Female,,%,,,,Total
+Ukraine,UA,UKR,804,Out-of-school rate for children of primary school age,2012,1.9,Male,,%,,,,Total
+Ukraine,UA,UKR,804,Out-of-school rate for children of primary school age,2012,1.7,Total,,%,,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,Out-of-school rate for children of primary school age,2016,14,Female,,%,,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,Out-of-school rate for children of primary school age,2016,17.799999,Male,,%,,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,Out-of-school rate for children of primary school age,2016,15.9,Total,,%,,,,Total
+Uruguay,UY,URY,858,Out-of-school rate for children of primary school age,2013,0.80000001,Female,,%,,,,Total
+Uruguay,UY,URY,858,Out-of-school rate for children of primary school age,2013,0.89999998,Male,,%,,,,Total
+Uruguay,UY,URY,858,Out-of-school rate for children of primary school age,2013,0.80000001,Total,,%,,,,Total
+Vietnam,VN,VNM,704,Out-of-school rate for children of primary school age,2014,1.8,Female,,%,,,,Total
+Vietnam,VN,VNM,704,Out-of-school rate for children of primary school age,2014,1.4,Male,,%,,,,Total
+Vietnam,VN,VNM,704,Out-of-school rate for children of primary school age,2014,1.5,Total,,%,,,,Total
+Yemen,YE,YEM,887,Out-of-school rate for children of primary school age,2013,27.1,Female,,%,,,,Total
+Yemen,YE,YEM,887,Out-of-school rate for children of primary school age,2013,19,Male,,%,,,,Total
+Yemen,YE,YEM,887,Out-of-school rate for children of primary school age,2013,23,Total,,%,,,,Total
+Zambia,ZM,ZMB,894,Out-of-school rate for children of primary school age,2018,13.25803,Female,,%,,,,Total
+Zambia,ZM,ZMB,894,Out-of-school rate for children of primary school age,2018,18.05275,Male,,%,,,,Total
+Zambia,ZM,ZMB,894,Out-of-school rate for children of primary school age,2018,15.62121,Total,,%,,,,Total
+Zimbabwe,ZW,ZWE,716,Out-of-school rate for children of primary school age,2019,4,Female,,%,,,,Total
+Zimbabwe,ZW,ZWE,716,Out-of-school rate for children of primary school age,2019,5.4000001,Male,,%,,,,Total
+Zimbabwe,ZW,ZWE,716,Out-of-school rate for children of primary school age,2019,4.6999998,Total,,%,,,,Total
