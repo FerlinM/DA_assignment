@@ -2,7 +2,7 @@
 title: "UNICEF Global Report: The Twin Pillars of Child Development"
 subtitle: "Examining Education Access and Preventive Healthcare Worldwide"
 author: "Ferlin Martin"
-date: "April 24, 2025"
+date: "April 26, 2025"
 format:
   html:
     embed-resources: true
@@ -395,7 +395,7 @@ Our analysis of UNICEF data reveals several key insights:
 
 3. **Education and healthcare indicators are linked**: Countries with stronger education systems tend to have better healthcare coverage, though the relationship is complex and influenced by many factors.
 
-4. **Regional patterns are significant**: Regional trends are clear in both indicators, suggesting that geographic, economic, and cultural factors play important roles in determining outcomes.
+4. **Regional patterns are significant**: Regional trends are clear in both indicators (out-of-school rates and HPV vaccination coverage), suggesting that geographic, economic, and cultural factors play important roles in determining outcomes for both education access and preventive healthcare.
 
 Based on these findings, we recommend:
 
